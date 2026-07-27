@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKIM TRAP #3!!!</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, Arial Black, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            -45deg,
+            #ff0080,
+            #ffcc00,
+            #00ffcc,
+            #00a2ff,
+            #b000ff,
+            #ff4400
+        );
+    background-size: 600% 600%;
+    animation: rainbow 12s ease infinite;
+}
+
+@keyframes rainbow {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+h1 {
+    font-size: clamp(3rem, 10vw, 8rem);
+    color: white;
+    text-shadow:
+        0 0 10px yellow,
+        0 0 20px red,
+        5px 5px black;
+    animation: pulse .8s infinite alternate;
+    z-index: 100;
+}
+
+@keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.15);}
+}
+
+.crab {
+    position: absolute;
+    font-size: 80px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.emoji {
+    position: absolute;
+    font-size: 70px;
+    animation: shake .15s infinite alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(-10px) rotate(-8deg);
+    }
+    to {
+        transform: translateX(10px) rotate(8deg);
+    }
+}
+
+.face {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    font-family: monospace;
+    animation: float 10s linear infinite;
+    text-shadow: 2px 2px black;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(110vh);
+    }
+    to {
+        transform: translateY(-120vh);
+    }
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 40px;
+    animation: twinkle 1s infinite alternate;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: .2;
+        transform: scale(.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1><b>SKIM TRAP #3!!!</b></h1>
+
+<!-- Coconut Crabs -->
+<div class="crab" style="top:5%;left:5%;">🦀</div>
+<div class="crab" style="top:75%;left:15%;animation-duration:3s;">🦀</div>
+<div class="crab" style="top:20%;left:80%;animation-duration:8s;">🦀</div>
+<div class="crab" style="top:70%;left:82%;animation-duration:4s;">🦀</div>
+<div class="crab" style="top:40%;left:55%;animation-duration:6s;">🦀</div>
+
+<!-- Head-shaking emojis -->
+<div class="emoji" style="top:12%;left:35%;">😵</div>
+<div class="emoji" style="top:80%;left:50%;">🤪</div>
+<div class="emoji" style="top:22%;left:70%;">😎</div>
+<div class="emoji" style="top:60%;left:8%;">😂</div>
+<div class="emoji" style="top:8%;left:92%;">🥥</div>
+
+<!-- ASCII -->
+<div class="face" style="left:5%;animation-duration:8s;">',:)</div>
+<div class="face" style="left:15%;animation-duration:12s;">',:)</div>
+<div class="face" style="left:25%;animation-duration:9s;">¯\_(ツ)_/¯</div>
+<div class="face" style="left:35%;animation-duration:14s;">(☞ﾟヮﾟ)☞</div>
+<div class="face" style="left:50%;animation-duration:10s;">',:)</div>
+<div class="face" style="left:65%;animation-duration:7s;">(╯°□°）╯︵ ┻━┻</div>
+<div class="face" style="left:80%;animation-duration:11s;">',:)</div>
+<div class="face" style="left:92%;animation-duration:13s;">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</div>
+
+<!-- Sparkles -->
+<div class="sparkle" style="top:15%;left:20%;">✨</div>
+<div class="sparkle" style="top:85%;left:75%;">⭐</div>
+<div class="sparkle" style="top:50%;left:92%;">✨</div>
+<div class="sparkle" style="top:30%;left:8%;">🌴</div>
+<div class="sparkle" style="top:65%;left:38%;">🥥</div>
+<div class="sparkle" style="top:10%;left:60%;">✨</div>
+
+</body>
+</html>
